@@ -1,0 +1,110 @@
+body {
+    display: flex; 
+    background: linear-gradient(240deg, #03588f 0%, #2dccfd 100%);
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+.calculator {
+    box-shadow: 0 0 25px 0 #00000080; 
+    border-radius: 4px;
+    overflow: hidden; 
+}
+
+.calc__display {
+    background: #242424;
+    color: #fff;
+    width: 16.25rem; 
+    padding: 0.75rem 1rem; 
+    font-size: calc(1rem * 1.2 * 1.2);
+    text-align: right; 
+}
+
+.calc__keypad {
+    background: #cfcfcf;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 2px; 
+    grid-template-areas: 
+        ". . . ."
+        "seven eight nine equal"
+        "four five six equal"
+        "one two three equal"
+        "nill period clear equal";
+    padding: 2px;
+}
+
+.seven {
+    grid-area: seven; 
+}
+
+.eight {
+    grid-area: eight;
+}
+
+.nine {
+    grid-area: nine; 
+}
+
+.four {
+    grid-area: four; 
+}
+
+.five {
+    grid-area: five; 
+}
+
+.six {
+    grid-area: six; 
+}
+
+.one {
+    grid-area: one; 
+}
+
+.two { 
+    grid-area: two;
+}
+
+.three {
+    grid-area: three;
+}
+
+.zero {
+    grid-area: nill;
+}
+
+.decimal {
+    grid-area: period; 
+}
+
+.clear {
+    grid-area: clear;
+}
+
+.equals {
+    grid-area: equal; 
+    background-color: #ff8b3d;
+
+}
+
+.equals:hover,
+.equals:active,
+.equals:focus {
+    background: #f8741c; 
+}
+
+.calc--smallkeys {
+    padding: 1em 0; 
+}
+
+.calc--smallkeys:hover,
+.calc--smallkeys:active,
+.calc--smallkeys:focus {
+    background-color: #b6b6b6;
+}
+
+.operators {
+    background: #727272; 
+}
